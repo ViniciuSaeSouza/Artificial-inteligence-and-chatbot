@@ -1,0 +1,1222 @@
+{
+  "intents": [
+    {
+      "intent": "cadastro",
+      "examples": [
+        {
+          "text": "Como que faz o cadastro aqui man?"
+        },
+        {
+          "text": "E ai parça, me ajuda com o cadastro!"
+        },
+        {
+          "text": "E ai truta, e o cadastro?"
+        },
+        {
+          "text": "E pra fazer o cadastro dessa parada ai?"
+        },
+        {
+          "text": "Irmão, estou com dificuldade pra fazer o cadastro, como que faz?"
+        },
+        {
+          "text": "Mano, como que faço o cadstro?"
+        },
+        {
+          "text": "Salve, cachorro! Me ajuda com o cadastro ai!"
+        }
+      ],
+      "description": "Fazer Cadastro."
+    },
+    {
+      "intent": "compra-produto",
+      "examples": [
+        {
+          "text": "Cachorro! tem tablet disponivel?"
+        },
+        {
+          "text": "E aí irmão, queria comprar um celular!"
+        },
+        {
+          "text": "E ai papai, queria comprar um celular, ta tendo?"
+        },
+        {
+          "text": "Pai, você tem celular pra vender ai?"
+        },
+        {
+          "text": "quais marcas vcs tem?"
+        },
+        {
+          "text": "Qual melhor celular que voce tem, papai?"
+        },
+        {
+          "text": "Qual o melhor, smartwathc que tem ai?"
+        },
+        {
+          "text": "Qual o melhor tablet que tem ai?"
+        },
+        {
+          "text": "Queria comprar um tablet, irmao!"
+        },
+        {
+          "text": "quero o iphone"
+        },
+        {
+          "text": "quero um iphone"
+        },
+        {
+          "text": "Salve cachorro! Como que eu faço pra comprar um celular?"
+        },
+        {
+          "text": "Salve, queria adquirir um celular."
+        },
+        {
+          "text": "to afim"
+        },
+        {
+          "text": "uns R$ 1500"
+        }
+      ],
+      "description": "Auxilia o usuário na compra de um produto."
+    },
+    {
+      "intent": "entrega-produto",
+      "examples": [
+        {
+          "text": "Cachorro, quando voce vai me mandar essa parada?"
+        },
+        {
+          "text": "Comprei hoje, consegue fazer a entrega amanhã?"
+        },
+        {
+          "text": "Consegue agendar a entrega pai?"
+        },
+        {
+          "text": "Mano, demora quantos dias pra entregar?"
+        },
+        {
+          "text": "Men, eu preciso dessa parada logo, qual o prazo?"
+        },
+        {
+          "text": "O meu nobre, de que forma que é a entrega?"
+        },
+        {
+          "text": "Preciso do produto em até 5 dias, quanto tempo demora?"
+        },
+        {
+          "text": "Qual o modo de entrega?"
+        },
+        {
+          "text": "Qual o prazo de entrega?"
+        },
+        {
+          "text": "Quando que o produto chega?"
+        }
+      ],
+      "description": "Informações de entrega"
+    },
+    {
+      "intent": "especificacoes-tecnicas",
+      "examples": [
+        {
+          "text": "Estou interessado em um smartphone com boa câmera, quais são suas especificações?"
+        },
+        {
+          "text": "Gostaria de saber mais sobre as características técnicas de um smartphone de médio porte."
+        },
+        {
+          "text": "Pode me dizer mais sobre as especificações de tela disponíveis em smartphones?"
+        },
+        {
+          "text": "Pode me fornecer detalhes sobre as especificações técnicas de um smartphone premium?"
+        },
+        {
+          "text": "Quais são as especificações técnicas do último modelo de smartphone?"
+        },
+        {
+          "text": "Quais são os padrões de armazenamento comuns em smartphones atualmente?"
+        },
+        {
+          "text": "qual celular tem uma tela grande"
+        },
+        {
+          "text": "Qual é o processador típico encontrado nos smartphones modernos?"
+        },
+        {
+          "text": "Quero um celular com bateria que dure"
+        },
+        {
+          "text": "Quero um celular com boa bateria"
+        }
+      ],
+      "description": "Intenção para quando o usuário quer obter informações detalhadas sobre as especificações técnicas de um celular"
+    },
+    {
+      "intent": "garantia",
+      "examples": [
+        {
+          "text": "A garantia cobre danos por água?"
+        },
+        {
+          "text": "Minha tela quebrou. A garantia cobre o conserto?"
+        },
+        {
+          "text": "Posso estender a garantia do meu dispositivo após a compra?"
+        },
+        {
+          "text": "Quais são os termos e condições da garantia do meu laptop?"
+        },
+        {
+          "text": "Qual é o prazo de garantia para o smartphone que comprei?"
+        },
+        {
+          "text": "Quanto tempo dura a garantia do meu tablet?"
+        }
+      ],
+      "description": "Informa para o usuário sobre a garantia disponível"
+    },
+    {
+      "intent": "promocao",
+      "examples": [
+        {
+          "text": "Estou procurando por um bom negócio em smartphones. Alguma promoção especial acontecendo?"
+        },
+        {
+          "text": "Há alguma promoção interessante para quem quer trocar de smartphone?"
+        },
+        {
+          "text": "Quais são os descontos disponíveis para smartphones nesta temporada?"
+        },
+        {
+          "text": "Quero comprar um novo smartphone. Alguma promoção que valha a pena?"
+        },
+        {
+          "text": "Quero comprar um smartphone como presente de aniversário. Alguma oferta especial para isso?"
+        },
+        {
+          "text": "Quero presentear alguém com um smartphone. Alguma promoção interessante para isso?"
+        },
+        {
+          "text": "tem promoção?"
+        }
+      ],
+      "description": "Fornece mais informações sobre as promoções vigentes"
+    },
+    {
+      "intent": "recomeçar",
+      "examples": [
+        {
+          "text": "começar denovo"
+        },
+        {
+          "text": "recomeçar"
+        },
+        {
+          "text": "reiniciar"
+        },
+        {
+          "text": "resetar"
+        },
+        {
+          "text": "restartar"
+        },
+        {
+          "text": "voltar para o começo"
+        },
+        {
+          "text": "volte para o inicio"
+        }
+      ],
+      "description": "Recomeça o chat a partir da saudação"
+    },
+    {
+      "intent": "reserva-produto",
+      "examples": [
+        {
+          "text": "Adicionar um produto ao carrinho, faz com que o mesmo fique reservado?"
+        },
+        {
+          "text": "Ao inserir um produto no carrinho de compras, eu faço a reserva?"
+        },
+        {
+          "text": "Colocar um produto no carrinho, é o mesmo de reserva-lo?"
+        },
+        {
+          "text": "Como reservo um produto no carrinho?"
+        },
+        {
+          "text": "Mano, taquei o produto no carrinho, reservou?"
+        },
+        {
+          "text": "Meti o produto no carrinho, será que ele foi reservado?"
+        },
+        {
+          "text": "O produto no carrinho, garante a reserva?"
+        },
+        {
+          "text": "Quando eu adiciono um produto ao carrinho, ele fica reservado?"
+        }
+      ],
+      "description": "Intenções referente a dúvidas sobre reserva de produtos"
+    },
+    {
+      "intent": "suporte-tecnico",
+      "examples": [
+        {
+          "text": "Como faço para restaurar as configurações de fábrica do meu celular?"
+        },
+        {
+          "text": "Estou com problemas para configurar meu novo smartphone. Pode me ajudar?"
+        },
+        {
+          "text": "Meu smartphone está apresentando lentidão. Como posso resolver isso?"
+        },
+        {
+          "text": "Não consigo conectar meu smartphone à minha rede Wi-Fi. O que devo fazer?"
+        },
+        {
+          "text": "O touchscreen do meu smartphone parou de funcionar. Alguma sugestão para consertar?"
+        },
+        {
+          "text": "Preciso de ajuda para transferir meus dados do meu smartphone antigo para o novo. Alguma dica?"
+        },
+        {
+          "text": "Quero resetar meu aparelho para configuração original"
+        },
+        {
+          "text": "Recebi uma notificação de erro no meu aplicativo de mensagens. Como posso corrigir isso?"
+        }
+      ],
+      "description": "Auxilia o usuário com suporte técnico"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "cep",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "cep",
+          "patterns": [
+            "(\\d{5}-\\d{3})",
+            "(\\d{5} \\{3})",
+            "(\\d{8})"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "cidade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Rio de Janeiro",
+          "synonyms": [
+            "cidade maravilhosa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Salvador",
+          "synonyms": [
+            "carnaval, olodum, michael jackson, ó pai i ó"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "São Paulo",
+          "synonyms": [
+            "sp, sampa, terra da garoa"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "([a-zA-Z0-9+._-]+@[a-zA-Z0-9._-]+\\.[a-zA-Z0-9_-]+)",
+            "\\b[A-Za-z0-9._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,}\\b"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "marca",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "iphone",
+          "synonyms": [
+            "iPhone"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "lenovo",
+          "synonyms": [
+            "lenovo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "lg",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "motorola",
+          "synonyms": [
+            "motolora"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "multilaser",
+          "synonyms": [
+            "multilaser"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "samsumg",
+          "synonyms": [
+            "samsumg",
+            "samsung",
+            "sansung"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Xiaomi",
+          "synonyms": [
+            "xiaomi, xiami"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "problema",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Conexão Wi-Fi",
+          "synonyms": [
+            "Acesso à internet sem fio",
+            "Conectividade Wi-Fi",
+            "Rede sem fio",
+            "wifi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Configurações de Fábrica",
+          "synonyms": [
+            "Ajustes originais",
+            "configuração original",
+            "Configurações de fábrica",
+            "Configurações padrão",
+            "Original de fábrica",
+            "padrão  de fábrica"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Lentidão",
+          "synonyms": [
+            "Baixo desempenho",
+            "devagar",
+            "lento",
+            "Performance lenta",
+            "Velocidade reduzida"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Outros",
+          "synonyms": [
+            "Outros problemas",
+            "Questões adicionais",
+            "Situações diversas"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sim-nao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "nao",
+          "synonyms": [
+            "nao, negativo, nem, sqn, nunca, sai fora"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "ok, claro, de acordo, bora, vamo, dale, to",
+            "to"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-currency",
+      "values": []
+    },
+    {
+      "entity": "telefone",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "celular",
+          "patterns": [
+            "(\\d{2}) (\\d{5}-\\d{4})",
+            "(\\d{2}) (\\d{9})",
+            "(\\d{5}-\\d{4})",
+            "(\\d{9})"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "fixo",
+          "patterns": [
+            "(\\d{2}) (\\d{4}-\\d{4})",
+            "(\\d{2}) (\\d{8})",
+            "(\\d{4}-\\d{4})",
+            "(\\d{8})"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Como posso te ajudar?"
+              },
+              {
+                "text": "Salve parça! Ta precisando de que?"
+              },
+              {
+                "text": "E aí cachorro, que que manda?"
+              },
+              {
+                "text": "Opa, vamos comprar um celular?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual o telefone?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1712838330517",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1712838330518",
+      "previous_sibling": "handler_7_1712838330518"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_6_1715898728121",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1715899153380"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual o e-mail?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_7_1712838276265",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1712838276266",
+      "previous_sibling": "handler_3_1712838276266"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1712838276265",
+      "context": {
+        "email": "@email.literal"
+      },
+      "conditions": "@email",
+      "event_name": "input",
+      "dialog_node": "handler_3_1712838276266"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_1_1715899153820",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1715899153835",
+      "previous_sibling": "handler_5_1715899153835"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1715899153820",
+      "context": {
+        "cep": "@cep"
+      },
+      "conditions": "@cep",
+      "event_name": "input",
+      "dialog_node": "handler_5_1715899153835"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual o cep?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_2_1712838032726",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1712838032736",
+      "previous_sibling": "handler_8_1712838032736"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1712838330517",
+      "context": {
+        "telefone": "@telefone.literal"
+      },
+      "conditions": "@telefone",
+      "event_name": "input",
+      "dialog_node": "handler_7_1712838330518"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1712838032726",
+      "context": {
+        "cep": "@cep.literal"
+      },
+      "conditions": "@cep",
+      "event_name": "input",
+      "dialog_node": "handler_8_1712838032736"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Fechou, vamos fazer seu cadastro, irmão!"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_4_1712837989521",
+      "conditions": "true",
+      "event_name": "generic",
+      "dialog_node": "handler_9_1712838906761",
+      "previous_sibling": "node_6_1715898728121"
+    },
+    {
+      "type": "standard",
+      "title": "Recomeçar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bora recomeçar!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "#recomeçar",
+      "dialog_node": "node_10_1715894167071",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Entrega de Produto em qualquer Cidade.",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_2_1711022195761"
+      },
+      "conditions": "#entrega-produto && @cidade",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1711023294846",
+      "previous_sibling": "node_4_1714329587600"
+    },
+    {
+      "type": "standard",
+      "title": "Ok no carrinho",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Adicionado ao carrinho patrão!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1712233454621",
+      "conditions": "@sim-nao:sim",
+      "dialog_node": "node_1_1715897396601"
+    },
+    {
+      "type": "standard",
+      "title": "Entrega de Produto",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Mano, a entrega é feita em até 15 dias! E ela é feita ou de forma gratuita ou de forma paga, dependendo da opção chega em menos de 15 dias!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#entrega-produto",
+      "dialog_node": "node_2_1711021364951",
+      "previous_sibling": "node_1_1711023294846"
+    },
+    {
+      "type": "standard",
+      "title": "Cidade de São Paulo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em até 7 dias úteis, você terá seu produto, lembrando que se optou pela forma de entrega paga, a probabilidade de chegar antes é maior."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1711021364951",
+      "conditions": "@cidade:(São Paulo)",
+      "dialog_node": "node_2_1711022195761"
+    },
+    {
+      "type": "standard",
+      "title": "Dados confirmados",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ta cadastrado dog!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1712837989521",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "@sim-nao:sim",
+      "dialog_node": "node_2_1715894388136"
+    },
+    {
+      "type": "standard",
+      "title": "Valor do Produto",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sim, temos da $marca_escolhida e custa @sys-currency! Gostaria de colocar no carrinho?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_7_1712232801926",
+      "conditions": "@sys-currency || @sim-nao",
+      "dialog_node": "node_3_1712233454621"
+    },
+    {
+      "type": "frame",
+      "title": "Cadastro",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Poderia confirma que o seu cep é $cep, o e-mail é $email e o seu telefone é $telefone."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#cadastro",
+      "dialog_node": "node_4_1712837989521",
+      "previous_sibling": "node_10_1715894167071"
+    },
+    {
+      "type": "standard",
+      "title": "Garantia",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A garantia dos nossos produtos varia dependendo do tipo e modelo do dispositivo. Geralmente, oferecemos uma garantia padrão que cobre defeitos de fabricação e problemas relacionados ao funcionamento normal do produto. Recomendo que verifique as informações específicas de garantia no manual do usuário ou no nosso site oficial. Se você tiver alguma dúvida sobre a garantia do seu dispositivo, nossa equipe de suporte ao cliente está disponível para ajudar e fornecer orientações adicionais."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#garantia",
+      "dialog_node": "node_4_1714329587600",
+      "previous_sibling": "node_6_1714329209788"
+    },
+    {
+      "type": "standard",
+      "title": "Reserva de Produto",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Pai, o produto só fica reservado se tu pagar!"
+              },
+              {
+                "text": "A parada só fica reservada depois do malote, pode pá?!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#reserva-produto",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1710419177998",
+      "previous_sibling": "node_2_1711021364951"
+    },
+    {
+      "type": "standard",
+      "title": "Ok",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Agora diz ai qual marca que vc tem preferencia!"
+              },
+              {
+                "text": "Fechou, qual marca que voce quer?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_6_1712232052550",
+      "conditions": "@sim-nao",
+      "dialog_node": "node_5_1712233193746"
+    },
+    {
+      "type": "standard",
+      "title": "Suporte técnicos",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@problema && #suporte-tecnico",
+      "dialog_node": "node_5_1714328503912",
+      "previous_sibling": "node_6_1712232052550"
+    },
+    {
+      "type": "standard",
+      "title": "Compra de Produto",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Salve meu consagrado! Aqui temos todos os tipos de dispositivos, tem iPhone, Xiaomi, Tablet de diversas marcas, e muito mais, você ta afim?"
+              },
+              {
+                "text": "E ai irmão, aqui nós tem diversas marcas top! você ta afim?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#compra-produto",
+      "dialog_node": "node_6_1712232052550",
+      "previous_sibling": "node_4_1712837989521"
+    },
+    {
+      "type": "standard",
+      "title": "Promoções",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Atualmente, estamos oferecendo várias promoções emocionantes em smartphones! Você pode encontrar descontos especiais em uma ampla gama de modelos, incluindo ofertas de compra conjunta com acessórios gratuitos, descontos em trocas de aparelhos antigos e promoções de pacotes com planos de serviço. Recomendo que você confira nossa página de ofertas em nosso site para obter os detalhes completos e aproveitar essas oportunidades incríveis!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#promocao",
+      "dialog_node": "node_6_1714329209788",
+      "previous_sibling": "node_5_1714328503912"
+    },
+    {
+      "type": "frame",
+      "title": "Dados não confirmados",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vamos recomeçar o cadastro!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_4_1712837989521",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1712837989521"
+      },
+      "conditions": "@sim-nao:nao",
+      "dialog_node": "node_6_1715898728121",
+      "previous_sibling": "node_2_1715894388136"
+    },
+    {
+      "type": "standard",
+      "title": "Rio de Janeiro e Salvador",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em até 10 dias úteis, você terá seu produto, lembrando que se optou pela forma de entrega paga, a probabilidade de chegar antes é maior."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1711021364951",
+      "conditions": "@cidade:(Rio de Janeiro) || @cidade:Salvador",
+      "dialog_node": "node_7_1711022360511",
+      "previous_sibling": "node_2_1711022195761"
+    },
+    {
+      "type": "standard",
+      "title": "Outras Cidades",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em até 15 dias úteis, você terá seu produto, lembrando que se optou pela forma de entrega paga, a probabilidade de chegar antes é maior."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1711021364951",
+      "conditions": "@cidade != \"Salvador\" &&  @cidade != \"Rio de Janeiro\" && @cidade != \"São Paulo\"",
+      "dialog_node": "node_7_1711022753718",
+      "previous_sibling": "node_7_1711022360511"
+    },
+    {
+      "type": "standard",
+      "title": "Preferencia de Marca",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Beleza, agora até qual valor voce pode pagar?"
+              },
+              {
+                "text": "Fmz, agora vc pretende gastar quanto?"
+              },
+              {
+                "text": "Fechou pai, agora ta querendo soltar quanto ai nessa compra?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_5_1712233193746",
+      "context": {
+        "marca_escolhida": "@marca.literal"
+      },
+      "conditions": "@marca || @sim-nao",
+      "dialog_node": "node_7_1712232801926"
+    },
+    {
+      "type": "standard",
+      "title": "Não no carrinho",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não vamos adicionar então, você quer ver outro celular?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1712233454621",
+      "conditions": "@sim-nao:nao",
+      "dialog_node": "node_8_1715897457047",
+      "previous_sibling": "node_1_1715897396601"
+    },
+    {
+      "type": "standard",
+      "title": "Outra compra",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Demoro! vamos voltar para o começo das perguntas sobre qual celular você quer."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1715897457047",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1712233193746"
+      },
+      "conditions": "@sim-nao:sim",
+      "dialog_node": "node_9_1715897517722"
+    },
+    {
+      "type": "standard",
+      "title": "Recomeçar do carrinho",
+      "parent": "node_8_1715897457047",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1715894167071"
+      },
+      "conditions": "@sim-nao:nao",
+      "dialog_node": "node_9_1715897569620",
+      "previous_sibling": "node_9_1715897517722"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certifique-se de que a senha Wi-Fi esteja correta e tente reiniciar o roteador para resolver problemas de conexão."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1714328503912",
+      "conditions": "@problema:(Conexão Wi-Fi)",
+      "dialog_node": "response_10_1714330371941",
+      "previous_sibling": "response_7_1714330340237"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para resolver problemas de lentidão, recomendamos fechar aplicativos em segundo plano e limpar o cache do dispositivo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1714328503912",
+      "conditions": "@problema:Lentidão",
+      "dialog_node": "response_3_1714330282451"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você pode restaurar as configurações de fábrica do seu dispositivo nas configurações do sistema. Isso irá redefinir o dispositivo para suas configurações originais."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1714328503912",
+      "conditions": "@problema:(Configurações de Fábrica)",
+      "dialog_node": "response_7_1714330340237",
+      "previous_sibling": "response_3_1714330282451"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1712837989521",
+      "variable": "$telefone",
+      "dialog_node": "slot_10_1712838330517",
+      "previous_sibling": "slot_7_1712838276265"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1715898728121",
+      "variable": "$cep",
+      "dialog_node": "slot_1_1715899153820",
+      "previous_sibling": "handler_1_1715899153380"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1712837989521",
+      "variable": "$cep",
+      "dialog_node": "slot_2_1712838032726",
+      "previous_sibling": "handler_9_1712838906761"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1712837989521",
+      "variable": "$email",
+      "dialog_node": "slot_7_1712838276265",
+      "previous_sibling": "slot_2_1712838032726"
+    }
+  ],
+  "counterexamples": [],
+  "learning_opt_out": false,
+  "language": "pt-br",
+  "description": "created for assistant 4ae3ae9b-14c9-4703-bd33-d9c1ecf262c9",
+  "name": "Cri.IA-dialog"
+}
