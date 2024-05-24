@@ -20,11 +20,11 @@
         "voicehidden": "pt-BR_IsabelaV3Voice",
         "format": "audio/wav",
         "password": "",
-        "apikey": "Sq291yL-WZin6Yh-AJ53-XXFAU_d_2FrZh92sfDBTkYN",
+        "apikey": "cH0rvm9lRkXTaJej31SxwUaKaEKO0DuqlnOcmFUsm9sj",
         "payload-response": true,
-        "service-endpoint": "https://api.au-syd.text-to-speech.watson.cloud.ibm.com/instances/29fc946a-5543-44fd-8927-4b98e944a870",
-        "x": 650,
-        "y": 220,
+        "service-endpoint": "https://api.au-syd.text-to-speech.watson.cloud.ibm.com/instances/9bc82a29-3377-45b1-986c-dc4c8cd181f1",
+        "x": 810,
+        "y": 180,
         "wires": [
             [
                 "a9cb983e58ecf0ed",
@@ -41,11 +41,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 300,
-        "y": 120,
+        "y": 200,
         "wires": []
     },
     {
@@ -60,8 +61,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 780,
-        "y": 160,
+        "x": 1060,
+        "y": 140,
         "wires": []
     },
     {
@@ -69,11 +70,11 @@
         "type": "telegram receiver",
         "z": "05cc232f2b258ac1",
         "name": "",
-        "bot": "059e3c34bc011dab",
+        "bot": "7e2c78fcaabc26e7",
         "saveDataDir": "",
         "filterCommands": false,
-        "x": 190,
-        "y": 220,
+        "x": 110,
+        "y": 280,
         "wires": [
             [
                 "27f478a448275179",
@@ -87,11 +88,11 @@
         "type": "telegram sender",
         "z": "05cc232f2b258ac1",
         "name": "",
-        "bot": "059e3c34bc011dab",
+        "bot": "7e2c78fcaabc26e7",
         "haserroroutput": false,
         "outputs": 1,
-        "x": 1070,
-        "y": 360,
+        "x": 1350,
+        "y": 340,
         "wires": [
             []
         ]
@@ -101,15 +102,15 @@
         "type": "function",
         "z": "05cc232f2b258ac1",
         "name": "Proc saída voice",
-        "func": "msg.payload = {\n    chatId: msg.params.session_id,\n    content : msg.payload,\n    type : 'voice'\n}\nreturn msg;",
+        "func": "msg.payload = {\n    chatId: msg.session_id,\n    content: msg.payload,\n    type: 'voice',\n    session_id: msg.session_id,\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 850,
-        "y": 260,
+        "x": 1060,
+        "y": 280,
         "wires": [
             [
                 "cb113fe59008f272",
@@ -130,7 +131,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 860,
+        "x": 1060,
         "y": 520,
         "wires": []
     },
@@ -146,8 +147,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1020,
-        "y": 220,
+        "x": 1320,
+        "y": 200,
         "wires": []
     },
     {
@@ -172,11 +173,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 250,
+        "x": 310,
         "y": 280,
         "wires": [
             [
-                "c309a16bf3ca6181"
+                "c309a16bf3ca6181",
+                "3e153e0ef05b21ca"
             ],
             [
                 "0dccf667ccf8e421"
@@ -188,15 +190,15 @@
         "type": "function",
         "z": "05cc232f2b258ac1",
         "name": "Proc entrada voice",
-        "func": "msg.chatid_salvo = msg.payload.chatId;\nmsg.payload = msg.payload.weblink;\nreturn msg;",
+        "func": "msg.chatid_salvo = msg.payload.chatId;\nmsg.params.session_id = msg.payload.chatId;\nmsg.payload = msg.payload.weblink;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 560,
+        "x": 450,
+        "y": 440,
         "wires": [
             [
                 "be2edaacac524675",
@@ -210,7 +212,7 @@
         "z": "05cc232f2b258ac1",
         "name": "STT",
         "alternatives": 1,
-        "speakerlabels": true,
+        "speakerlabels": false,
         "smartformatting": false,
         "lang": "pt-BR",
         "langhidden": "pt-BR",
@@ -223,16 +225,16 @@
         "keywords-threshold": "0.5",
         "word-confidence": false,
         "password": "",
-        "apikey": "kEd_Szz_q44DiRSnuDI9zCisWu7tZG2ETCs-XzaL3ddr",
+        "apikey": "XNW7eWhTjja0vp4lkvwuFuK22w3id9tW6te6cpRdIe3c",
         "payload-response": true,
         "streaming-mode": false,
         "streaming-mute": true,
         "auto-connect": false,
         "discard-listening": false,
         "disable-precheck": false,
-        "service-endpoint": "https://api.au-syd.speech-to-text.watson.cloud.ibm.com/instances/c7e87935-d51b-4b68-81ff-4b9ff34844a2",
-        "x": 570,
-        "y": 560,
+        "service-endpoint": "https://api.au-syd.speech-to-text.watson.cloud.ibm.com/instances/8756f6ee-0170-429b-80f2-8367f641415f",
+        "x": 650,
+        "y": 440,
         "wires": [
             [
                 "fbb0be781d1a5247",
@@ -252,8 +254,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 480,
-        "y": 640,
+        "x": 500,
+        "y": 580,
         "wires": []
     },
     {
@@ -269,31 +271,30 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 680,
-        "y": 640,
+        "x": 760,
+        "y": 580,
         "wires": []
     },
     {
         "id": "7c4bbcc4d531511c",
         "type": "watson-assistant-v2",
         "z": "05cc232f2b258ac1",
-        "name": "meuBot",
-        "service-endpoint": "https://api.au-syd.assistant.watson.cloud.ibm.com/instances/5c0d0095-524e-49b6-96a9-d25a08c93fbe",
-        "assistant_id": "ebdeb727-d3d2-4a46-b4c7-66f8fc5fe52f",
+        "name": "Autobot",
+        "service-endpoint": "https://api.us-south.assistant.watson.cloud.ibm.com/instances/f2f8cb37-7a2d-4430-a069-2af9fbacbd07",
+        "assistant_id": "eb8ec743-fae7-4efa-bb60-1bf6e6880afd",
         "debug": false,
         "restart": false,
         "return_context": true,
         "alternate_intents": false,
-        "multisession": true,
+        "multisession": false,
         "timeout": "",
         "optout-learning": false,
         "persist-session-id": false,
-        "x": 660,
+        "x": 820,
         "y": 420,
         "wires": [
             [
                 "1ac7069f97eb967c",
-                "2c00c846e7f760a6",
                 "ec575e480e14bea0"
             ]
         ]
@@ -310,8 +311,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 860,
-        "y": 420,
+        "x": 1040,
+        "y": 400,
         "wires": [
             [
                 "cb113fe59008f272",
@@ -324,19 +325,19 @@
         "type": "function",
         "z": "05cc232f2b258ac1",
         "name": "ProcIn wa",
-        "func": "msg.params = {};\nmsg.params.session_id = msg.payload.chatId;\nmsg.payload = msg.payload.content;\nreturn msg;",
+        "func": "msg.session_id = msg.payload.chatId;\nmsg.chatid_salvo = msg.session_id;\nmsg.payload = msg.payload.content;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 320,
+        "x": 480,
+        "y": 280,
         "wires": [
             [
-                "7c4bbcc4d531511c",
-                "1efeaec00e6694b6"
+                "1efeaec00e6694b6",
+                "39618fb5990c3ac9"
             ]
         ]
     },
@@ -345,15 +346,15 @@
         "type": "function",
         "z": "05cc232f2b258ac1",
         "name": "ProcOut wa",
-        "func": "msg.payload = msg.payload.output.generic[0].text;\nreturn msg;",
+        "func": "msg.payload = msg.payload.output.generic[0].text\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
-        "y": 320,
+        "x": 810,
+        "y": 340,
         "wires": [
             [
                 "0f372981a6a55c36",
@@ -373,8 +374,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 460,
-        "y": 220,
+        "x": 640,
+        "y": 140,
         "wires": []
     },
     {
@@ -389,8 +390,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 840,
-        "y": 360,
+        "x": 1060,
+        "y": 340,
         "wires": []
     },
     {
@@ -405,14 +406,53 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1060,
+        "x": 1360,
         "y": 440,
         "wires": []
     },
     {
-        "id": "059e3c34bc011dab",
+        "id": "3e153e0ef05b21ca",
+        "type": "debug",
+        "z": "05cc232f2b258ac1",
+        "name": "debug 40",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "39618fb5990c3ac9",
+        "type": "watson-assistant-v2",
+        "z": "05cc232f2b258ac1",
+        "name": "Autobot",
+        "service-endpoint": "https://api.us-south.assistant.watson.cloud.ibm.com/instances/f2f8cb37-7a2d-4430-a069-2af9fbacbd07",
+        "assistant_id": "eb8ec743-fae7-4efa-bb60-1bf6e6880afd",
+        "debug": false,
+        "restart": false,
+        "return_context": true,
+        "alternate_intents": false,
+        "multisession": false,
+        "timeout": "",
+        "optout-learning": false,
+        "persist-session-id": false,
+        "x": 660,
+        "y": 300,
+        "wires": [
+            [
+                "2c00c846e7f760a6"
+            ]
+        ]
+    },
+    {
+        "id": "7e2c78fcaabc26e7",
         "type": "telegram bot",
-        "botname": "Mechzinho",
+        "botname": "Saes_ai_bot",
         "usernames": "",
         "chatids": "",
         "baseapiurl": "",
