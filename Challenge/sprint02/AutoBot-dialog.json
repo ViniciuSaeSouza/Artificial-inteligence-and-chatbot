@@ -1,0 +1,485 @@
+{
+  "intents": [
+    {
+      "intent": "Manutenção_Geral",
+      "examples": [
+        {
+          "text": "Como está a saúde do meu carro?"
+        },
+        {
+          "text": "Como faço para agendar uma revisão?"
+        },
+        {
+          "text": "O carro está com luzes acesas no painel"
+        },
+        {
+          "text": "O carro está com problema"
+        },
+        {
+          "text": "O carro está fazendo barulho"
+        },
+        {
+          "text": "O carro está vibrando"
+        },
+        {
+          "text": "O carro precisa de manutenção"
+        },
+        {
+          "text": "Preciso de um check-up no carro"
+        },
+        {
+          "text": "Preciso revisar o carro"
+        },
+        {
+          "text": "Preciso trocar o óleo"
+        },
+        {
+          "text": "Qual a quilometragem para a próxima revisão?"
+        },
+        {
+          "text": "Quando é a próxima revisão?"
+        }
+      ],
+      "description": "Reconhece intenção de manutenção geral"
+    },
+    {
+      "intent": "Problema_Bateria",
+      "examples": [
+        {
+          "text": "A bateria está corroída"
+        },
+        {
+          "text": "A bateria está descarregada"
+        },
+        {
+          "text": "A bateria está vazando"
+        },
+        {
+          "text": "A bateria está velha"
+        },
+        {
+          "text": "A bateria não está carregando"
+        },
+        {
+          "text": "A bateria não segura carga"
+        },
+        {
+          "text": "A luz da bateria está acesa no painel"
+        },
+        {
+          "text": "O carro demora para ligar"
+        },
+        {
+          "text": "O carro está sem energia"
+        },
+        {
+          "text": "O carro morre do nada"
+        },
+        {
+          "text": "O carro não dá partida"
+        },
+        {
+          "text": "Preciso trocar a bateria"
+        }
+      ],
+      "description": "Reconhece intenção de problemas na bateria"
+    },
+    {
+      "intent": "Problema_Freios",
+      "examples": [
+        {
+          "text": "A luz de freio está acesa no painel"
+        },
+        {
+          "text": "O carro está puxando para um lado ao frear"
+        },
+        {
+          "text": "O carro não está freando bem"
+        },
+        {
+          "text": "O freio de mão não está funcionando"
+        },
+        {
+          "text": "O freio está com um cheiro de queimado"
+        },
+        {
+          "text": "O freio está trepidando"
+        },
+        {
+          "text": "O freio está vibrando"
+        },
+        {
+          "text": "O pedal do freio está mole"
+        },
+        {
+          "text": "Os discos de freio estão gastos"
+        },
+        {
+          "text": "Os freios estão fazendo barulho"
+        },
+        {
+          "text": "Os freios estão rangendo"
+        },
+        {
+          "text": "Preciso trocar as pastilhas de freio"
+        }
+      ],
+      "description": "Reconhece intenção de problema nos freios"
+    },
+    {
+      "intent": "Problema_Motor",
+      "examples": [
+        {
+          "text": "Está saindo fumaça do motor"
+        },
+        {
+          "text": "Meu motor está fazendo barulho estranho"
+        },
+        {
+          "text": "O carro está consumindo muito combustível"
+        },
+        {
+          "text": "O carro está perdendo potência"
+        },
+        {
+          "text": "O carro não liga"
+        },
+        {
+          "text": "O motor está com um ruído diferente"
+        },
+        {
+          "text": "O motor está cortando"
+        },
+        {
+          "text": "O motor está engasgando"
+        },
+        {
+          "text": "O motor está falhando"
+        },
+        {
+          "text": "O motor está superaquecendo"
+        },
+        {
+          "text": "O motor está vibrando muito"
+        },
+        {
+          "text": "Tem um cheiro estranho vindo do motor"
+        }
+      ],
+      "description": "Reconhece intenções de problemas no motor"
+    },
+    {
+      "intent": "Problema_Pneus",
+      "examples": [
+        {
+          "text": "O carro está puxando para um lado"
+        },
+        {
+          "text": "O pneu está com pressão baixa"
+        },
+        {
+          "text": "O pneu está com um rasgo"
+        },
+        {
+          "text": "O pneu está desalinhado"
+        },
+        {
+          "text": "O pneu está desbalanceado"
+        },
+        {
+          "text": "O pneu está desgastado"
+        },
+        {
+          "text": "O pneu está escorregando"
+        },
+        {
+          "text": "O pneu está fazendo barulho"
+        },
+        {
+          "text": "O pneu está murcho"
+        },
+        {
+          "text": "O pneu furou"
+        },
+        {
+          "text": "Os pneus estão com bolhas"
+        },
+        {
+          "text": "Preciso trocar os pneus"
+        }
+      ],
+      "description": "Reconhece intenção de problema nos pneus"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Peças_Automotivas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Bateria",
+          "synonyms": [
+            "acumulador",
+            "bateria",
+            "pilha"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Freios",
+          "synonyms": [
+            "freios",
+            "sistema de frenagem",
+            "travões"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Manutenção",
+          "synonyms": [
+            "check-up",
+            "manutenção",
+            "revisão",
+            "serviço"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "motor",
+          "synonyms": [
+            "máquina",
+            "propulsor"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pneus",
+          "synonyms": [
+            "borrachas",
+            "pneus",
+            "rodas"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá! Eu sou o AutoBot, seu assistente virtual para ajudar a diagnosticar problemas no seu veículo. Como posso ajudá-lo hoje?"
+              },
+              {
+                "text": "Bem-vindo ao AutoBot! Estou aqui para ajudá-lo a resolver qualquer problema com o seu veículo. Como posso ser útil?"
+              },
+              {
+                "text": "Saudações! Sou o AutoBot, pronto para ajudá-lo com questões relacionadas ao seu veículo. O que posso fazer por você hoje?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              },
+              {
+                "text": "Desculpe, não consegui entender sua pergunta. Por favor, reformule sua pergunta ou forneça mais detalhes para que eu possa ajudá-lo melhor."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_6_1716508980754",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Problema nos Freios",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi que você está enfrentando um problema com os freios. Por favor, compartilhe mais detalhes para que eu possa oferecer assistência adequada."
+              },
+              {
+                "text": "Freios agindo estranho? Vamos verificar isso. Por favor, me dê mais informações sobre o problema."
+              },
+              {
+                "text": "Problemas com os freios podem ser perigosos. Estou aqui para ajudar. Me conte o que está acontecendo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Problema_Freios",
+      "dialog_node": "node_1_1716508854414",
+      "previous_sibling": "node_5_1716508829012"
+    },
+    {
+      "type": "standard",
+      "title": "Problema na Bateria",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi que há um problema com a bateria. Por favor, me forneça mais informações para que eu possa ajudá-lo da melhor forma possível."
+              },
+              {
+                "text": "Parece que a bateria do seu veículo está causando problemas. Posso ajudá-lo a resolver isso. Descreva a situação com mais detalhes, por favor."
+              },
+              {
+                "text": "Uh oh! Problema com a bateria? Vamos resolver isso juntos. Me conte mais sobre o que está acontecendo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Problema_Bateria",
+      "dialog_node": "node_5_1716508829012",
+      "previous_sibling": "node_6_1716508919634"
+    },
+    {
+      "type": "standard",
+      "title": "Problema no Motor",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi que você está enfrentando um problema no motor. Você pode descrever mais detalhes?"
+              },
+              {
+                "text": "Entendi que você está enfrentando um problema no motor. Por favor, descreva com mais detalhes para que eu possa oferecer uma solução adequada.\n\n"
+              },
+              {
+                "text": "Parece que há algo errado com o motor do seu veículo. Poderia me fornecer mais informações para que eu possa ajudá-lo melhor?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Problema_Motor",
+      "dialog_node": "node_6_1716508919634",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Problema nos Pneus",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi que você está com problemas nos pneus. Para uma solução precisa, me forneça mais detalhes sobre o que está acontecendo."
+              },
+              {
+                "text": "Pneus são uma parte crucial da segurança do seu veículo. Me diga o que está acontecendo para que eu possa ajudá-lo a resolver."
+              },
+              {
+                "text": "Problema com os pneus? Vamos resolver isso rapidamente. Descreva o problema com mais detalhes, por favor."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Problema_Pneus",
+      "dialog_node": "node_6_1716508959216",
+      "previous_sibling": "node_1_1716508854414"
+    },
+    {
+      "type": "standard",
+      "title": "Manutenção Geral",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi que você precisa de uma manutenção geral. Para uma assistência personalizada, me informe sobre quaisquer sintomas específicos ou preocupações."
+              },
+              {
+                "text": "Manutenção regular é fundamental para a saúde do seu veículo. Me diga o que você precisa para que eu possa ajudá-lo."
+              },
+              {
+                "text": "Manter o seu veículo em boas condições é importante. Me conte mais sobre o que você precisa para que eu possa orientá-lo adequadamente."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Manutenção_Geral",
+      "dialog_node": "node_6_1716508980754",
+      "previous_sibling": "node_6_1716508959216"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "generative_ai": {
+      "slot_filling": {
+        "enabled": false
+      }
+    },
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores",
+      "use_connect_to_support_prompt": "Connect to support",
+      "single_answer_clarification_prompt": "Something else"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "language": "pt-br",
+  "description": "Chatbot focado em auxiliar e diagnosticar problemas automotivos",
+  "name": "AutoBot-dialog"
+}
