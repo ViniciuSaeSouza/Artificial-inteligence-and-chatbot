@@ -1,0 +1,29 @@
+554456 - Vinicius Saes de Souza
+557002 - Anderson de Sousa Pedro
+555877 - Luigi Giuseppe Jampietro Sciarretta
+
+Turma: 1TDSPK
+
+Vídeo Youtube:
+  https://youtu.be/W34P77C86-w
+
+
+Telegram -
+  Token: 6762017051:AAHyBphTHoKspwwShieVxjgl5YkmcOeuDDg
+
+Watson Assistant -
+  API: BoVyzsQra72uicB51cK_khoDF7ArT6eCFajUptj0mtTg
+
+  URL: https://api.us-south.assistant.watson.cloud.ibm.com/instances/f2f8cb37-7a2d-4430-a069-2af9fbacbd07
+
+  Assistant ID: eb8ec743-fae7-4efa-bb60-1bf6e6880afd
+
+Speech to Text -
+  API: XNW7eWhTjja0vp4lkvwuFuK22w3id9tW6te6cpRdIe3c
+  
+  endpoint: https://api.au-syd.speech-to-text.watson.cloud.ibm.com/instances/8756f6ee-0170-429b-80f2-8367f641415f
+
+Text to Speech -
+  API: cH0rvm9lRkXTaJej31SxwUaKaEKO0DuqlnOcmFUsm9sj
+  
+  URL: https://api.au-syd.text-to-speech.watson.cloud.ibm.com/instances/9bc82a29-3377-45b1-986c-dc4c8cd181f1
